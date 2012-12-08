@@ -1,4 +1,0 @@
-BDE
-===
-
-Blood Donor Explorer
