@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="locate0">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="locate0Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locate0Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="locate1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="locate1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locate1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="locate2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="locate2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locate2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="counting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="countingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mailing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="group" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mailingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mailingResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="general1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="blood" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="general1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="general1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="general2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="blood" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="general2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="general2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="campaign1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zipco" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="campaign1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaign1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="campaign2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zipco" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="campaign2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="campaign2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="details">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="detailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="detailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="change">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addressline1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addressline2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="changeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="changeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listbybgroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listbybgroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="listbybgroupResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="locate0SoapIn">
+    <wsdl:part name="parameters" element="tns:locate0" />
+  </wsdl:message>
+  <wsdl:message name="locate0SoapOut">
+    <wsdl:part name="parameters" element="tns:locate0Response" />
+  </wsdl:message>
+  <wsdl:message name="locate1SoapIn">
+    <wsdl:part name="parameters" element="tns:locate1" />
+  </wsdl:message>
+  <wsdl:message name="locate1SoapOut">
+    <wsdl:part name="parameters" element="tns:locate1Response" />
+  </wsdl:message>
+  <wsdl:message name="locate2SoapIn">
+    <wsdl:part name="parameters" element="tns:locate2" />
+  </wsdl:message>
+  <wsdl:message name="locate2SoapOut">
+    <wsdl:part name="parameters" element="tns:locate2Response" />
+  </wsdl:message>
+  <wsdl:message name="countingSoapIn">
+    <wsdl:part name="parameters" element="tns:counting" />
+  </wsdl:message>
+  <wsdl:message name="countingSoapOut">
+    <wsdl:part name="parameters" element="tns:countingResponse" />
+  </wsdl:message>
+  <wsdl:message name="mailingSoapIn">
+    <wsdl:part name="parameters" element="tns:mailing" />
+  </wsdl:message>
+  <wsdl:message name="mailingSoapOut">
+    <wsdl:part name="parameters" element="tns:mailingResponse" />
+  </wsdl:message>
+  <wsdl:message name="general1SoapIn">
+    <wsdl:part name="parameters" element="tns:general1" />
+  </wsdl:message>
+  <wsdl:message name="general1SoapOut">
+    <wsdl:part name="parameters" element="tns:general1Response" />
+  </wsdl:message>
+  <wsdl:message name="general2SoapIn">
+    <wsdl:part name="parameters" element="tns:general2" />
+  </wsdl:message>
+  <wsdl:message name="general2SoapOut">
+    <wsdl:part name="parameters" element="tns:general2Response" />
+  </wsdl:message>
+  <wsdl:message name="campaign1SoapIn">
+    <wsdl:part name="parameters" element="tns:campaign1" />
+  </wsdl:message>
+  <wsdl:message name="campaign1SoapOut">
+    <wsdl:part name="parameters" element="tns:campaign1Response" />
+  </wsdl:message>
+  <wsdl:message name="campaign2SoapIn">
+    <wsdl:part name="parameters" element="tns:campaign2" />
+  </wsdl:message>
+  <wsdl:message name="campaign2SoapOut">
+    <wsdl:part name="parameters" element="tns:campaign2Response" />
+  </wsdl:message>
+  <wsdl:message name="detailsSoapIn">
+    <wsdl:part name="parameters" element="tns:details" />
+  </wsdl:message>
+  <wsdl:message name="detailsSoapOut">
+    <wsdl:part name="parameters" element="tns:detailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="changeSoapIn">
+    <wsdl:part name="parameters" element="tns:change" />
+  </wsdl:message>
+  <wsdl:message name="changeSoapOut">
+    <wsdl:part name="parameters" element="tns:changeResponse" />
+  </wsdl:message>
+  <wsdl:message name="listbybgroupSoapIn">
+    <wsdl:part name="parameters" element="tns:listbybgroup" />
+  </wsdl:message>
+  <wsdl:message name="listbybgroupSoapOut">
+    <wsdl:part name="parameters" element="tns:listbybgroupResponse" />
+  </wsdl:message>
+  <wsdl:portType name="locateSoap">
+    <wsdl:operation name="locate0">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Locate Donor</wsdl:documentation>
+      <wsdl:input message="tns:locate0SoapIn" />
+      <wsdl:output message="tns:locate0SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="locate1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Locate1 Donor</wsdl:documentation>
+      <wsdl:input message="tns:locate1SoapIn" />
+      <wsdl:output message="tns:locate1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="locate2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Locate2 Donor</wsdl:documentation>
+      <wsdl:input message="tns:locate2SoapIn" />
+      <wsdl:output message="tns:locate2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="counting">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">counting Donors</wsdl:documentation>
+      <wsdl:input message="tns:countingSoapIn" />
+      <wsdl:output message="tns:countingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mailing">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">email</wsdl:documentation>
+      <wsdl:input message="tns:mailingSoapIn" />
+      <wsdl:output message="tns:mailingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="general1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">General update message</wsdl:documentation>
+      <wsdl:input message="tns:general1SoapIn" />
+      <wsdl:output message="tns:general1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="general2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">General update date</wsdl:documentation>
+      <wsdl:input message="tns:general2SoapIn" />
+      <wsdl:output message="tns:general2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="campaign1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Campaign update Address</wsdl:documentation>
+      <wsdl:input message="tns:campaign1SoapIn" />
+      <wsdl:output message="tns:campaign1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="campaign2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Campaign update date</wsdl:documentation>
+      <wsdl:input message="tns:campaign2SoapIn" />
+      <wsdl:output message="tns:campaign2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="details">
+      <wsdl:input message="tns:detailsSoapIn" />
+      <wsdl:output message="tns:detailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="change">
+      <wsdl:input message="tns:changeSoapIn" />
+      <wsdl:output message="tns:changeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listbybgroup">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets list of all people with requested blood group</wsdl:documentation>
+      <wsdl:input message="tns:listbybgroupSoapIn" />
+      <wsdl:output message="tns:listbybgroupSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="locateSoap" type="tns:locateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="locate0">
+      <soap:operation soapAction="http://tempuri.org/locate0" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="locate1">
+      <soap:operation soapAction="http://tempuri.org/locate1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="locate2">
+      <soap:operation soapAction="http://tempuri.org/locate2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="counting">
+      <soap:operation soapAction="http://tempuri.org/counting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mailing">
+      <soap:operation soapAction="http://tempuri.org/mailing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="general1">
+      <soap:operation soapAction="http://tempuri.org/general1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="general2">
+      <soap:operation soapAction="http://tempuri.org/general2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="campaign1">
+      <soap:operation soapAction="http://tempuri.org/campaign1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="campaign2">
+      <soap:operation soapAction="http://tempuri.org/campaign2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="details">
+      <soap:operation soapAction="http://tempuri.org/details" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="change">
+      <soap:operation soapAction="http://tempuri.org/change" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listbybgroup">
+      <soap:operation soapAction="http://tempuri.org/listbybgroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="locateSoap12" type="tns:locateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="locate0">
+      <soap12:operation soapAction="http://tempuri.org/locate0" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="locate1">
+      <soap12:operation soapAction="http://tempuri.org/locate1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="locate2">
+      <soap12:operation soapAction="http://tempuri.org/locate2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="counting">
+      <soap12:operation soapAction="http://tempuri.org/counting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mailing">
+      <soap12:operation soapAction="http://tempuri.org/mailing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="general1">
+      <soap12:operation soapAction="http://tempuri.org/general1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="general2">
+      <soap12:operation soapAction="http://tempuri.org/general2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="campaign1">
+      <soap12:operation soapAction="http://tempuri.org/campaign1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="campaign2">
+      <soap12:operation soapAction="http://tempuri.org/campaign2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="details">
+      <soap12:operation soapAction="http://tempuri.org/details" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="change">
+      <soap12:operation soapAction="http://tempuri.org/change" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listbybgroup">
+      <soap12:operation soapAction="http://tempuri.org/listbybgroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="locate">
+    <wsdl:port name="locateSoap" binding="tns:locateSoap">
+      <soap:address location="http://localhost:62520/project%20edit/locate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="locateSoap12" binding="tns:locateSoap12">
+      <soap12:address location="http://localhost:62520/project%20edit/locate.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

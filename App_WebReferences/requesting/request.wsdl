@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="request0">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request0Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request0Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request4Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request13">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request13Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request13Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request14">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request14Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request14Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request5Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request6">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request6Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request7">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request7Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request8Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request9">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request9Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request9Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request10">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request10Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request10Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request11">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request11Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request11Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request12">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="request12Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request12Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updated">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ans" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updatedResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="request0SoapIn">
+    <wsdl:part name="parameters" element="tns:request0" />
+  </wsdl:message>
+  <wsdl:message name="request0SoapOut">
+    <wsdl:part name="parameters" element="tns:request0Response" />
+  </wsdl:message>
+  <wsdl:message name="request1SoapIn">
+    <wsdl:part name="parameters" element="tns:request1" />
+  </wsdl:message>
+  <wsdl:message name="request1SoapOut">
+    <wsdl:part name="parameters" element="tns:request1Response" />
+  </wsdl:message>
+  <wsdl:message name="request2SoapIn">
+    <wsdl:part name="parameters" element="tns:request2" />
+  </wsdl:message>
+  <wsdl:message name="request2SoapOut">
+    <wsdl:part name="parameters" element="tns:request2Response" />
+  </wsdl:message>
+  <wsdl:message name="request3SoapIn">
+    <wsdl:part name="parameters" element="tns:request3" />
+  </wsdl:message>
+  <wsdl:message name="request3SoapOut">
+    <wsdl:part name="parameters" element="tns:request3Response" />
+  </wsdl:message>
+  <wsdl:message name="request4SoapIn">
+    <wsdl:part name="parameters" element="tns:request4" />
+  </wsdl:message>
+  <wsdl:message name="request4SoapOut">
+    <wsdl:part name="parameters" element="tns:request4Response" />
+  </wsdl:message>
+  <wsdl:message name="request13SoapIn">
+    <wsdl:part name="parameters" element="tns:request13" />
+  </wsdl:message>
+  <wsdl:message name="request13SoapOut">
+    <wsdl:part name="parameters" element="tns:request13Response" />
+  </wsdl:message>
+  <wsdl:message name="request14SoapIn">
+    <wsdl:part name="parameters" element="tns:request14" />
+  </wsdl:message>
+  <wsdl:message name="request14SoapOut">
+    <wsdl:part name="parameters" element="tns:request14Response" />
+  </wsdl:message>
+  <wsdl:message name="request5SoapIn">
+    <wsdl:part name="parameters" element="tns:request5" />
+  </wsdl:message>
+  <wsdl:message name="request5SoapOut">
+    <wsdl:part name="parameters" element="tns:request5Response" />
+  </wsdl:message>
+  <wsdl:message name="request6SoapIn">
+    <wsdl:part name="parameters" element="tns:request6" />
+  </wsdl:message>
+  <wsdl:message name="request6SoapOut">
+    <wsdl:part name="parameters" element="tns:request6Response" />
+  </wsdl:message>
+  <wsdl:message name="request7SoapIn">
+    <wsdl:part name="parameters" element="tns:request7" />
+  </wsdl:message>
+  <wsdl:message name="request7SoapOut">
+    <wsdl:part name="parameters" element="tns:request7Response" />
+  </wsdl:message>
+  <wsdl:message name="request8SoapIn">
+    <wsdl:part name="parameters" element="tns:request8" />
+  </wsdl:message>
+  <wsdl:message name="request8SoapOut">
+    <wsdl:part name="parameters" element="tns:request8Response" />
+  </wsdl:message>
+  <wsdl:message name="request9SoapIn">
+    <wsdl:part name="parameters" element="tns:request9" />
+  </wsdl:message>
+  <wsdl:message name="request9SoapOut">
+    <wsdl:part name="parameters" element="tns:request9Response" />
+  </wsdl:message>
+  <wsdl:message name="request10SoapIn">
+    <wsdl:part name="parameters" element="tns:request10" />
+  </wsdl:message>
+  <wsdl:message name="request10SoapOut">
+    <wsdl:part name="parameters" element="tns:request10Response" />
+  </wsdl:message>
+  <wsdl:message name="request11SoapIn">
+    <wsdl:part name="parameters" element="tns:request11" />
+  </wsdl:message>
+  <wsdl:message name="request11SoapOut">
+    <wsdl:part name="parameters" element="tns:request11Response" />
+  </wsdl:message>
+  <wsdl:message name="request12SoapIn">
+    <wsdl:part name="parameters" element="tns:request12" />
+  </wsdl:message>
+  <wsdl:message name="request12SoapOut">
+    <wsdl:part name="parameters" element="tns:request12Response" />
+  </wsdl:message>
+  <wsdl:message name="updatedSoapIn">
+    <wsdl:part name="parameters" element="tns:updated" />
+  </wsdl:message>
+  <wsdl:message name="updatedSoapOut">
+    <wsdl:part name="parameters" element="tns:updatedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="requestSoap">
+    <wsdl:operation name="request0">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Firstname</wsdl:documentation>
+      <wsdl:input message="tns:request0SoapIn" />
+      <wsdl:output message="tns:request0SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Lastname</wsdl:documentation>
+      <wsdl:input message="tns:request1SoapIn" />
+      <wsdl:output message="tns:request1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Bloodgroup</wsdl:documentation>
+      <wsdl:input message="tns:request2SoapIn" />
+      <wsdl:output message="tns:request2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Bloodgroup</wsdl:documentation>
+      <wsdl:input message="tns:request3SoapIn" />
+      <wsdl:output message="tns:request3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Bloodgroup</wsdl:documentation>
+      <wsdl:input message="tns:request4SoapIn" />
+      <wsdl:output message="tns:request4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request13">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Userid</wsdl:documentation>
+      <wsdl:input message="tns:request13SoapIn" />
+      <wsdl:output message="tns:request13SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request14">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">get question for admin</wsdl:documentation>
+      <wsdl:input message="tns:request14SoapIn" />
+      <wsdl:output message="tns:request14SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get email address</wsdl:documentation>
+      <wsdl:input message="tns:request5SoapIn" />
+      <wsdl:output message="tns:request5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Gender</wsdl:documentation>
+      <wsdl:input message="tns:request6SoapIn" />
+      <wsdl:output message="tns:request6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request7">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Lastname</wsdl:documentation>
+      <wsdl:input message="tns:request7SoapIn" />
+      <wsdl:output message="tns:request7SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get addressline1</wsdl:documentation>
+      <wsdl:input message="tns:request8SoapIn" />
+      <wsdl:output message="tns:request8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request9">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get addressline2</wsdl:documentation>
+      <wsdl:input message="tns:request9SoapIn" />
+      <wsdl:output message="tns:request9SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request10">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get city</wsdl:documentation>
+      <wsdl:input message="tns:request10SoapIn" />
+      <wsdl:output message="tns:request10SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request11">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get state</wsdl:documentation>
+      <wsdl:input message="tns:request11SoapIn" />
+      <wsdl:output message="tns:request11SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="request12">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get DOB</wsdl:documentation>
+      <wsdl:input message="tns:request12SoapIn" />
+      <wsdl:output message="tns:request12SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updated">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">answer to user</wsdl:documentation>
+      <wsdl:input message="tns:updatedSoapIn" />
+      <wsdl:output message="tns:updatedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="requestSoap" type="tns:requestSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="request0">
+      <soap:operation soapAction="http://tempuri.org/request0" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request1">
+      <soap:operation soapAction="http://tempuri.org/request1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request2">
+      <soap:operation soapAction="http://tempuri.org/request2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request3">
+      <soap:operation soapAction="http://tempuri.org/request3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request4">
+      <soap:operation soapAction="http://tempuri.org/request4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request13">
+      <soap:operation soapAction="http://tempuri.org/request13" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request14">
+      <soap:operation soapAction="http://tempuri.org/request14" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request5">
+      <soap:operation soapAction="http://tempuri.org/request5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request6">
+      <soap:operation soapAction="http://tempuri.org/request6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request7">
+      <soap:operation soapAction="http://tempuri.org/request7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request8">
+      <soap:operation soapAction="http://tempuri.org/request8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request9">
+      <soap:operation soapAction="http://tempuri.org/request9" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request10">
+      <soap:operation soapAction="http://tempuri.org/request10" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request11">
+      <soap:operation soapAction="http://tempuri.org/request11" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request12">
+      <soap:operation soapAction="http://tempuri.org/request12" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updated">
+      <soap:operation soapAction="http://tempuri.org/updated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="requestSoap12" type="tns:requestSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="request0">
+      <soap12:operation soapAction="http://tempuri.org/request0" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request1">
+      <soap12:operation soapAction="http://tempuri.org/request1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request2">
+      <soap12:operation soapAction="http://tempuri.org/request2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request3">
+      <soap12:operation soapAction="http://tempuri.org/request3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request4">
+      <soap12:operation soapAction="http://tempuri.org/request4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request13">
+      <soap12:operation soapAction="http://tempuri.org/request13" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request14">
+      <soap12:operation soapAction="http://tempuri.org/request14" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request5">
+      <soap12:operation soapAction="http://tempuri.org/request5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request6">
+      <soap12:operation soapAction="http://tempuri.org/request6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request7">
+      <soap12:operation soapAction="http://tempuri.org/request7" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request8">
+      <soap12:operation soapAction="http://tempuri.org/request8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request9">
+      <soap12:operation soapAction="http://tempuri.org/request9" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request10">
+      <soap12:operation soapAction="http://tempuri.org/request10" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request11">
+      <soap12:operation soapAction="http://tempuri.org/request11" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="request12">
+      <soap12:operation soapAction="http://tempuri.org/request12" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updated">
+      <soap12:operation soapAction="http://tempuri.org/updated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="request">
+    <wsdl:port name="requestSoap" binding="tns:requestSoap">
+      <soap:address location="http://localhost:62520/project%20edit/request.asmx" />
+    </wsdl:port>
+    <wsdl:port name="requestSoap12" binding="tns:requestSoap12">
+      <soap12:address location="http://localhost:62520/project%20edit/request.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

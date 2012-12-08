@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="registration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dateob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bloodgroup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addressline1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addressline2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pswd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="registrationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updating">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ques" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updatingResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dated" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="update1Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bgrp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="update2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="registrationSoapIn">
+    <wsdl:part name="parameters" element="tns:registration" />
+  </wsdl:message>
+  <wsdl:message name="registrationSoapOut">
+    <wsdl:part name="parameters" element="tns:registrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatingSoapIn">
+    <wsdl:part name="parameters" element="tns:updating" />
+  </wsdl:message>
+  <wsdl:message name="updatingSoapOut">
+    <wsdl:part name="parameters" element="tns:updatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="update1SoapIn">
+    <wsdl:part name="parameters" element="tns:update1" />
+  </wsdl:message>
+  <wsdl:message name="update1SoapOut">
+    <wsdl:part name="parameters" element="tns:update1Response" />
+  </wsdl:message>
+  <wsdl:message name="update2SoapIn">
+    <wsdl:part name="parameters" element="tns:update2" />
+  </wsdl:message>
+  <wsdl:message name="update2SoapOut">
+    <wsdl:part name="parameters" element="tns:update2Response" />
+  </wsdl:message>
+  <wsdl:portType name="RsSoap">
+    <wsdl:operation name="registration">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">registration for a blood donor</wsdl:documentation>
+      <wsdl:input message="tns:registrationSoapIn" />
+      <wsdl:output message="tns:registrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updating">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questions update</wsdl:documentation>
+      <wsdl:input message="tns:updatingSoapIn" />
+      <wsdl:output message="tns:updatingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update1">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates on blood group</wsdl:documentation>
+      <wsdl:input message="tns:update1SoapIn" />
+      <wsdl:output message="tns:update1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Updates on Campaigns</wsdl:documentation>
+      <wsdl:input message="tns:update2SoapIn" />
+      <wsdl:output message="tns:update2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RsSoap" type="tns:RsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registration">
+      <soap:operation soapAction="http://tempuri.org/registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updating">
+      <soap:operation soapAction="http://tempuri.org/updating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update1">
+      <soap:operation soapAction="http://tempuri.org/update1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update2">
+      <soap:operation soapAction="http://tempuri.org/update2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RsSoap12" type="tns:RsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registration">
+      <soap12:operation soapAction="http://tempuri.org/registration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updating">
+      <soap12:operation soapAction="http://tempuri.org/updating" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update1">
+      <soap12:operation soapAction="http://tempuri.org/update1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update2">
+      <soap12:operation soapAction="http://tempuri.org/update2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Rs">
+    <wsdl:port name="RsSoap" binding="tns:RsSoap">
+      <soap:address location="http://localhost:62520/project%20edit/Rs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RsSoap12" binding="tns:RsSoap12">
+      <soap12:address location="http://localhost:62520/project%20edit/Rs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

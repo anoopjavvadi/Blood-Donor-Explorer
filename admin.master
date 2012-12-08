@@ -1,0 +1,124 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administrator BDE</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="Stylesheet" href="common.css" type="text/css" />
+    <link href= "admin.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style6
+        {
+            width: 251px;
+        }
+        #header
+        {
+            margin-top: 9px;
+        }
+        </style>
+    </head>
+<body bgcolor="#550403" style="leftmargin=0px; topmargin=0px; marginwidth=0px; marginheight=0px;">
+    <form id="form1" runat="server">
+    <div>
+    <span class="style6"></span>
+<!-- Save for Web Slices (business solutions_sliced.psd) -->
+<div id="body">
+<br />
+<br />
+<br />
+ <table style="width=1001px; height=1001px;" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+      <td colspan="2" rowspan="3"><div id="logo">
+      <div class="logo"><a href="adminhome.aspx"<span class="style5"><br />
+	  </span></a></div>
+      </div></td>
+<td colspan="3"><div class="style1" id="header">
+			<br />
+			<span class="style3">&nbsp; Blood Donor Explorer</span>
+             <span class="style4"><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Supply equals Demand is the Goal            </span></div></td>
+	      <td>
+		      <img src="images/spacer.gif" width="1" height="185" alt="" /></td>
+      </tr>
+    <tr>
+      <td><div class="top_menu">
+      <ul>
+      <li><a href="Viewrequests.aspx">REQUESTS</a></li>
+      <li><a href="MainPage.aspx">LOG OUT</a></li>
+      </ul>
+      </div></td>
+	    <td colspan="2">
+	        <img src="images/index_04.jpg" width="128" height="42" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="1" height="42" alt="" /></td>
+      </tr>
+    <tr>
+      <td colspan="2" rowspan="2"><div id="content">
+      <div class="title">&nbsp;&nbsp;</div>
+      <div class=" content">
+  
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              <p>
+                  <br />
+              </p>
+          </asp:ContentPlaceHolder>
+  
+      </div>
+      </div></td>
+	    <td rowspan="3">
+	        <img src="images/index_06.jpg" width="27" height="773" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="1" height="76" alt="" /></td>
+      </tr>
+    <tr>
+      <td rowspan="2"><img src="images/index_07.jpg" width="70" height="697" alt=""/></td>
+      <td><div class="left_menu">
+        <ul>
+        <li><a href="adminhome.aspx">HOME</a></li>
+        <li><a href="Sendnotifications.aspx">SEND EMAIL</a></li>
+        <li><a href="CampaignUpdate.aspx">UPDATE CAMPAIGN</a></li>
+        <li><a href="PostNotification.aspx">POST UPDATES</a></li>
+        <li><a href="answer.aspx">USER ANSWERS</a></li>
+        
+        </ul>
+        </div></td>
+	    <td>
+	        <img src="images/spacer.gif" width="1" height="651" alt="" /></td>
+      </tr>
+    <tr>
+      <td colspan="3"><div id="footer">
+     </td>
+  <td>
+	        <img src="images/spacer.gif" width="1" height="46" alt="" /></td>
+      </tr>
+    <tr>
+      <td>
+        <img src="images/spacer.gif" width="70" height="1" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="179" height="1" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="623" height="1" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="101" height="1" alt="" /></td>
+	    <td>
+	        <img src="images/spacer.gif" width="27" height="1" alt="" /></td>
+	    <td></td>
+      </tr>
+  </table>
+  <br />
+  <br />
+<tr>
+     <font color="black"> <td colspan="3"><div id="Div1" class="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></div></td>
+  <td>
+	        <img src="images/spacer.gif" width="1" height="46" alt="" /></td>
+      </tr>
+</div>
+    </div>
+    </form>
+</body>
+</html>

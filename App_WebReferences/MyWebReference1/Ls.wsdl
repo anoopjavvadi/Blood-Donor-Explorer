@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="log">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="logResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="welcome">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="welcomeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="welcomeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="questions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="questionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="questionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="question1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="question1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="question1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="question2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="question2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="question2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="logSoapIn">
+    <wsdl:part name="parameters" element="tns:log" />
+  </wsdl:message>
+  <wsdl:message name="logSoapOut">
+    <wsdl:part name="parameters" element="tns:logResponse" />
+  </wsdl:message>
+  <wsdl:message name="welcomeSoapIn">
+    <wsdl:part name="parameters" element="tns:welcome" />
+  </wsdl:message>
+  <wsdl:message name="welcomeSoapOut">
+    <wsdl:part name="parameters" element="tns:welcomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="questionsSoapIn">
+    <wsdl:part name="parameters" element="tns:questions" />
+  </wsdl:message>
+  <wsdl:message name="questionsSoapOut">
+    <wsdl:part name="parameters" element="tns:questionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="question1SoapIn">
+    <wsdl:part name="parameters" element="tns:question1" />
+  </wsdl:message>
+  <wsdl:message name="question1SoapOut">
+    <wsdl:part name="parameters" element="tns:question1Response" />
+  </wsdl:message>
+  <wsdl:message name="question2SoapIn">
+    <wsdl:part name="parameters" element="tns:question2" />
+  </wsdl:message>
+  <wsdl:message name="question2SoapOut">
+    <wsdl:part name="parameters" element="tns:question2Response" />
+  </wsdl:message>
+  <wsdl:portType name="LsSoap">
+    <wsdl:operation name="log">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Checks username and password :)</wsdl:documentation>
+      <wsdl:input message="tns:logSoapIn" />
+      <wsdl:output message="tns:logSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="welcome">
+      <wsdl:input message="tns:welcomeSoapIn" />
+      <wsdl:output message="tns:welcomeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="questions">
+      <wsdl:input message="tns:questionsSoapIn" />
+      <wsdl:output message="tns:questionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="question1">
+      <wsdl:input message="tns:question1SoapIn" />
+      <wsdl:output message="tns:question1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="question2">
+      <wsdl:input message="tns:question2SoapIn" />
+      <wsdl:output message="tns:question2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LsSoap" type="tns:LsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="log">
+      <soap:operation soapAction="http://tempuri.org/log" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="welcome">
+      <soap:operation soapAction="http://tempuri.org/welcome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="questions">
+      <soap:operation soapAction="http://tempuri.org/questions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="question1">
+      <soap:operation soapAction="http://tempuri.org/question1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="question2">
+      <soap:operation soapAction="http://tempuri.org/question2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LsSoap12" type="tns:LsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="log">
+      <soap12:operation soapAction="http://tempuri.org/log" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="welcome">
+      <soap12:operation soapAction="http://tempuri.org/welcome" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="questions">
+      <soap12:operation soapAction="http://tempuri.org/questions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="question1">
+      <soap12:operation soapAction="http://tempuri.org/question1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="question2">
+      <soap12:operation soapAction="http://tempuri.org/question2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ls">
+    <wsdl:port name="LsSoap" binding="tns:LsSoap">
+      <soap:address location="http://localhost:62520/project%20edit/Ls.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LsSoap12" binding="tns:LsSoap12">
+      <soap12:address location="http://localhost:62520/project%20edit/Ls.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

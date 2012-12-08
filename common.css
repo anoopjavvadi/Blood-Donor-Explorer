@@ -1,0 +1,86 @@
+﻿
+
+#hh
+{
+    background: white;
+width: 960px;
+margin: 0 auto;
+border-radius: 20px;
+padding: 10px;
+    }
+    
+ .style1
+ {
+     color: #B22919 !important;
+font-weight: bold;
+margin-top: -40px;
+     }
+     
+ .caption
+ {
+     background: none !important;
+     }
+     
+  #ja-mainnav
+  {
+      border-top:none !important;
+      }
+      
+  body#bd
+  {
+      background: #550403 !important;
+      }
+      
+  #ChattersBulletedList
+  {
+      width: 150px;
+      float: left;
+      background: none !important;
+      }
+      
+  #ChattersBulletedList li
+  {
+      color:Red;
+      list-style: bullets;
+      
+      }
+      
+     #ChatMessageList
+     {
+         padding: 10px;
+         }
+      
+   .login
+   {
+       float: right;
+padding: 10px 0;
+border: 1px solid red;
+width: 300px;
+background: white;
+border-radius: 20px;
+margin-right: 80px;
+       }   
+       
+    .login input[type=submit]
+    {
+        background: none repeat scroll 0 0 WHITE;
+    border-radius: 20px 20px 20px 20px;
+    color: White;
+    font-weight: bold;
+    padding: 5px;
+        }
+        
+     .ui-accordion, .style2
+     {
+         font-size: 14px;
+         }
+         
+  .style1
+  {
+      margin-top: 8px;
+      }
+      
+  #logo
+  {
+      margin-top: 9px;
+      }
